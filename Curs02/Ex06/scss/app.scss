@@ -9,3 +9,29 @@
   height: 150px;
   border: 1px solid #000;
 }
+
+$b-style: (dotted, dashed, solid, double, none);
+$margins: (
+  'xs': 4px,
+  'sm': 8px,
+  'md': 16px,
+  'lg': 32px,
+);
+
+@each $style in $b-style {
+  .b-#{$style} {
+    border: 1px $style black;
+  }
+}
+
+@each $size, $value in $margins {
+  .m-#{$size} {
+    margin: $value;
+  }
+}
+
+@each $size, $value in $margins {
+  .p-#{$size} {
+    padding: $value;
+  }
+}

@@ -1,3 +1,39 @@
-body {
-  background-color: blue;
+.line {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #000;
+}
+
+@for $i from 1 to 6 {
+  .box-01 {
+    width: 145px + $i * 5;
+    height: 145px + $i * 5;
+  }
+}
+
+@for $i from 1 through 5 {
+  .box-#{$i}0 {
+    color: red;
+    @if $i % 2 != 0 {
+      background-color: grey;
+    }
+  }
+}
+
+@for $i from 2 to 6 {
+  .box-#{$i} {
+    width: 145px + $i * 5;
+  }
+}
+
+@for $i from 2 to 6 {
+  .box-#{$i} {
+    border: $i * 1px solid black;
+  }
 }
