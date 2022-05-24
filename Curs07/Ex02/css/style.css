@@ -6,6 +6,15 @@ body {
   width: 100px;
   height: 100px;
   background-color: black;
+  opacity: 20%;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 50%;
+  margin-top: -100px;
 }
 
 @keyframes animate {
@@ -26,4 +35,34 @@ body {
 
 .box-animate {
   animation: animate 10s ease-out;
+}
+
+@keyframes animate-circle {
+  20% {
+    /* translate (x,y) */
+    transform: translate(0, calc(100vh - 100px));
+  }
+
+  40% {
+    /* translate(x, y) */
+    transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+  }
+
+  60% {
+    /* translate(x, y) */
+    transform: translate(calc(100vw - 100px), 0);
+  }
+
+  80% {
+    transform: translate(0, calc(100vh - 100px));
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.circle-animate {
+  animation: animate-circle 9.8s ease-out;
+  animation-delay: 0.2s;
 }
