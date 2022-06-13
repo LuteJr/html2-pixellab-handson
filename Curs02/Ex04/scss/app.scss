@@ -37,3 +37,9 @@
     border: $i * 1px solid black;
   }
 }
+
+@for $i from 2 to 6 {
+  .box-#{$i} {
+    height: 145px + $i * 5;
+  }
+}
