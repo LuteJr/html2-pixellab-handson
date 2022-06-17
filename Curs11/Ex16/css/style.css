@@ -24,3 +24,53 @@
   justify-content: end;
   align-content: end;
 }
+
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 45px);
+  grid-template-rows: repeat(3, 45px);
+  height: 350px;
+  background-color: blanchedalmond;
+  justify-content: center;
+  align-content: center;
+}
+
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 45px);
+  grid-template-rows: repeat(3, 45px);
+  height: 350px;
+  background-color: blanchedalmond;
+  justify-content: center;
+  align-content: end;
+}
+
+.grid-container-4 {
+  display: grid;
+  grid-template-columns: repeat(3, 45px);
+  grid-template-rows: repeat(3, 45px);
+  height: 350px;
+  background-color: blanchedalmond;
+  justify-content: start;
+  align-content: start;
+}
+
+.grid-container-5 {
+  display: grid;
+  grid-template-columns: repeat(3, 45px);
+  grid-template-rows: repeat(3, 45px);
+  height: 350px;
+  background-color: blanchedalmond;
+  justify-content: center;
+  align-content: start;
+}
+
+.grid-container-6 {
+  display: grid;
+  grid-template-columns: repeat(3, 45px);
+  grid-template-rows: repeat(3, 45px);
+  height: 350px;
+  background-color: blanchedalmond;
+  align-content: center;
+  justify-content: end;
+}
